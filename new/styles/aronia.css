@@ -1,0 +1,30 @@
+
+nav
+{
+  background-color:#638;
+}
+
+nav div ul
+{
+   background-color:#638;
+}
+
+h1
+{
+	color:#638;
+}
+
+h2
+{
+	color:#638;
+}
+
+h3
+{
+	text-shadow:0 0 25px #638;
+}
+
+#banner
+{
+   background-image: url('http://www.baumschule-gehlhaar.de/img/pictures/960x200/806-bluetengehoelze.jpg');
+}

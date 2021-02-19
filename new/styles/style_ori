@@ -1,0 +1,316 @@
+
+@import url('http://fonts.googleapis.com/css?family=Bitter|Nunito');
+
+body 
+{
+  font:14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+  color:#333;
+  background:url('../images/natural.jpg');
+  background-size:100%;
+}
+
+#wrapper
+{
+  box-shadow: 0 0 25px #000;
+  border-radius: 50px;
+  padding:20px;
+  margin-top:25px;
+  margin-bottom:25px;
+  background: url('../images/bkbrown.jpg');
+  background-position:top;
+}
+
+a, a:visited 
+{
+  color:#FFF;
+  text-decoration:none;
+}
+
+a:hover, a:active 
+{
+  color:#000;
+  text-decoration:underline;
+}
+
+#logo img
+{
+    padding:10px;
+}
+
+#logo img:hover
+{
+  box-shadow: 0 0 6px #630;
+  border-radius: 50px;
+}
+
+
+#header
+{
+    text-align:right;
+    font-size:16px;
+    padding-top:10px;
+}
+
+#header form
+{
+  margin-bottom:20px;
+  padding-right:6px;
+}
+
+#header form a
+{
+  padding:0;
+}
+
+#header form input[type=text]
+{
+  font-size:26px;
+  border-width:0;
+  border-radius:7px;
+  color:#AAA;
+  vertical-align:bottom;  
+}
+
+#header form input[type=image]
+{
+  display:none;
+}
+
+#header img
+{
+    width:40px;
+    height:40px;
+    vertical-align:top;
+}
+
+#header a
+{
+    font-family:'Nunito', Sans-Serif;
+    padding: 5px;
+    font-size:16px;
+    color:#000;
+    text-transform:uppercase;
+}
+
+#header a:hover
+{
+    text-decoration:none;
+    text-shadow:0 0 25px #630;
+}
+
+.theme-default #slider 
+{
+    margin:20px auto 0 auto;
+    width:940px; /* Make sure your images are the same size */
+    height:300px; /* Make sure your images are the same size */
+}
+
+.blurb:hover
+{
+    text-shadow: 1px 1px #B08B47;
+}
+
+.blurb h2
+{
+    font-size:25px;
+    font-family: 'Bitter', serif;
+    margin-bottom:10px;
+}
+
+.blurb p
+{
+    font-size:16px;
+    text-shadow:none !important;
+}
+
+.blurb a
+{
+    clear:both;
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+    text-shadow:1px 1px #B08B47;
+    text-align:left;
+}
+
+.blurb a:hover
+{
+      text-shadow:1px 1px #B08B47;
+}
+
+
+#newsletter
+{
+    font-size:16px;
+    font-family:'Bitter', serif;
+}
+
+#footer
+{
+    font-family:'Bitter', serif;
+    font-size:16px;
+}
+
+#footer a
+{
+    color:#333;
+}
+
+
+nav
+{
+  margin-top:10px;
+  height:40px;
+  border-radius:15px 15px 0 0;
+  position:relative;
+}
+
+nav > div:first-child
+{
+   margin-left:0;
+   border-top-left-radius:15px;
+   box-shadow: 0 0 50px 3px #000 inset;
+   color: #FFF;
+   font-size:25px;
+   text-align:center;
+   font-family:'Bitter';
+   text-shadow:0 0 10px #000;
+   cursor:pointer;
+}
+
+nav > div:first-child:hover
+{
+   box-shadow: 0 0 50px 3px #000 inset;
+}
+
+nav > div.grid_1
+{
+   margin-left: 0;
+   width: 90px !important;
+}
+
+nav > div:last-child
+{
+   margin-right: 0;
+   border-top-right-radius: 15px;
+}
+
+nav a
+{
+   display:block;
+   color: #FFF;
+   text-decoration:none;
+   font-size:25px;
+   text-align:center;
+   font-family:'Bitter';
+   text-shadow:0 0 10px #000;
+}
+
+nav a:hover
+{
+   text-decoration: none;
+   color: #FFF;
+   text-shadow: none;
+}
+
+nav div ul
+{
+   display: none;
+   list-style:none outside none;
+   min-width:140px;
+   position:absolute;
+   box-shadow:0 0 10px #000;
+   z-index:5;
+}
+
+nav div:hover ul
+{
+   display:block;
+}
+
+nav div ul li
+{
+   margin-left: 0;
+}
+
+nav div ul li a
+{
+   padding: 0 10px;
+}
+
+nav > div:hover
+{
+   box-shadow: 0 0 10px #000; 
+}
+
+nav div ul a:hover
+{
+   box-shadow:0 0 10px #000;
+}
+
+#sections
+{
+   display: none;
+   width: 960px;
+   color:#333;
+   position:absolute;
+   background: url('../images/bkbrown.jpg');
+   background-position:center;
+   box-shadow:0 0 50px #000;
+   border-radius: 0 0 15px 15px;
+   text-align:left;
+   padding: 10px 0;
+   cursor:default;
+   text-shadow:none;
+   z-index:10;
+}
+
+#banner
+{
+	width:960px;
+	height:200px;
+   position:relative;
+}
+
+#whitebox
+{
+   float:right;
+	width:320px;
+	height:200px;
+	background-color:#FFF;
+   opacity:0.5;   
+}
+
+#heading
+{
+   position:absolute;
+   right:0;
+   margin:0;
+	padding:20px;
+	width:280px;
+	height:160px;
+}
+
+#content
+{
+	margin:0;
+	padding:10px;
+	background-color:#FFF;
+}
+
+h1
+{
+	font-family:'Bitter';
+	font-size:35px;
+	text-shadow:0 0 25px #FFF;
+}
+
+h2
+{
+	font-family: Palatino Linotype, Book Antiqua3, Palatino, serif;
+	font-size:35px;
+}
+
+h3
+{
+	font-family: 'Nunito';
+}

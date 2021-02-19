@@ -1,0 +1,516 @@
+/*
+Theme Name:		SMH_1
+Theme URI:		http://sawmillhollow.com/
+Description:	Custom Theme for Sawmill Hollow
+Version:		1.0
+Author:			Aditya
+Author URI:		http://sawmillhollow.com
+*/
+
+
+body { background: #CCC; color: #111; font: 62.5% Georgia, "Times New Roman", Times, serif; }
+
+* { padding: 0; margin: 0; }
+
+
+
+
+
+/*---:[ core layout elements ]:---*/
+
+#container { background-color:#FFF; width: 900px; margin: 0 auto; }   /* change width from 90em */
+
+
+/*  original logo with holistic family farm:
+
+		#homelink { background-image:url('http://sawmillhollow.com/wp-content/themes/SMH_1/images/smhlogotm.png'); display:block; height:127px; width:550px; text-indent:-9999px; }
+		
+		*/
+
+
+		#homelink { background-image:url('http://sawmillhollow.com/wp-content/themes/SMH_1/images/barelogo.png'); display:block; height:127px; width:550px; text-indent:-9999px; }
+
+
+		#header { padding: 2.2em 1.1em; border-bottom: 3px double #ddd; clear: both; }
+
+		#content_box { width: 100%; }
+
+			#content { float: left; padding-left:1em; }
+			
+			div.home div h1 { display:none; }
+
+				.post_box { margin: 0 2.2em 0 1.1em; border-top: 1px dotted #bbb; }
+				
+				.top { border: none !important; }
+
+			#sidebars { float: right; }
+
+				#sidebars_box { width: 100%; }
+				
+				.pad_sidebars { padding-top: 2.2em; }
+				
+					.sidebar { width: 50%; float: left; }
+
+		#footer { padding-top: 1.1em; color: #606060; text-align:center; }
+
+
+
+/*---:[ global elements ]:---*/
+
+a, a:visited { color: #336; text-decoration: none;  }     
+
+/* old link color: #2361a1  */
+/* reversed to underline on hover  */
+
+a:hover { color: #336; text-decoration: underline; }
+
+a img { border: none; }
+
+blockquote { border-left: 1px solid #ddd; color: #666; }
+
+acronym { font-weight: bold; font-size: 0.786em; line-height: 1em; text-transform: uppercase; letter-spacing: 1px; border-bottom: none; cursor: help; }
+
+abbr { font-size: 1em; line-height: 1em; border-bottom: none; }
+
+sub, sup { line-height: 0.5em; }
+
+code { font: 0.929em Consolas, "Andale Mono", Courier, "Courier New"; color: #050; }
+
+pre { margin-bottom: 1.833em; padding: 0.75em 0.917em; font: normal 0.857em/1.5em Consolas, "Andale Mono", Courier, "Courier New"; background: #eee; border: 1px solid #ddd; overflow: auto; clear: both; }
+
+/* 
+input, textarea { font-size: 1em; font-family: Georgia, "Times New Roman", Times, serif; color: #444; background: #eee; border: 1px solid #aaa; border-right-color: #ddd; border-bottom-color: #ddd; }
+
+*/
+
+input:focus, textarea:focus { background: #fff; border-color: #777; border-right-color: #ccc; border-bottom-color: #ccc; }
+
+	.format_text .text_input, #comment_form p .text_input { width: 14em; padding: 0.286em; border-width: 0.071em; } /* Based on 14pt base font size */
+
+	.sidebar .text_input { width: 14.692em; padding: 0.308em; border-width: 0.077em; } /* Based on 13pt base font size in sidebar */
+	
+input.form_submit { font-weight: bold; background: url('images/submit-bg.gif'); border: 3px double #999; border-top-color: #ccc; border-left-color: #ccc; color: #111; cursor: pointer; }
+	
+input.form_submit:hover { color: #2361a1; }
+
+p.center { text-align: center !important; }
+
+p.bottom { margin: 0 !important; }
+
+.remove_bottom_margin { margin-bottom: 0 !important; }
+
+/*---:[ headlines ]:---*/
+
+h1 { font-weight: normal; font-size: 4em; text-transform: uppercase; letter-spacing:0.5px; font-family:Georgia, serif; }
+
+h2, h3 { font-weight: normal; font-size: 1em; }
+
+h2 { font-size: 1.7em; }
+/* line-height: 1.455em; */
+
+
+	h2 a, h2 a:visited { color: #111; text-decoration: none; }
+
+	h2 a:hover { color: #2361a1; }
+	
+	.post_box h1, .post_box h2 { padding-top: 1em; }
+	
+/*	.no_byline .post_box h1, .no_byline .post_box h2 { margin-bottom: 1em; }   */
+	
+	#archive_info h1 { font-weight: normal; font-size: 2.4em; line-height: 1em; padding-top: 0.458em; }
+
+h3 { font-weight: normal; font-size: 1.286em; line-height: 1.222em; }
+
+/*	.format_text h3 { margin: 1.833em 0 0.611em 0; }  */
+
+	.format_text h3.top { margin: 0 0 0.611em 0 !important; }
+	
+	.sidebar h3 { font-size: 1.0em; line-height: 1.385em; margin-bottom: 0.615em; font-variant: small-caps; letter-spacing: 2px; color: #555; }
+
+h4 { font-weight:bold; font-size:1em; }
+
+/*	.format_text h4 { line-height: 2.2em; }   */
+	
+
+
+/* custom sidebar for home page - aditya */
+ul.post-meta { list-style:none; width:100%; font-size:1.4em; line-height:1.571em; }
+ul.post-meta li { float:left; width:275px; padding-right:15px; }
+span.post-meta-key { display:none; }
+
+
+
+.at300bs { display:none; }
+
+
+
+/*---:[ nav menu styles ]:---*/
+
+ul#tabs { list-style:none; border-top: 1px solid #666; border-bottom: 3px double #666; width:100%; background-color:#FFF; font-size:1.949em; } /*earlier font size for 800px width is 1.749 */
+
+ul#tabs li { float: left; }
+
+.page_item { border-right: 1px dashed #CCC; }
+.last_item { border-right: none; }
+
+
+ul#tabs li a, ul#tabs li a:visited { background-color:#FFF; color: #111; text-decoration: none; letter-spacing:1px; line-height:1.4em; padding:0.1em 0.7em; }
+ul#tabs li a:hover { background-color:#336; color: #FFF; text-decoration: none; }
+
+ul#tabs li.current_page_item a, ul#tabs li.current_page_item a:visited { background-color:#FFF; color: #336; text-decoration: none; letter-spacing:1px; line-height:1.4em; padding:0.1em 0.7em; }
+ul#tabs li.current_page_item a:hover { background-color:#336; color: #FFF; text-decoration: none; }
+
+
+/*
+ul#tabs li { font-size: 1.5em; background: #FFF; border-right: 1px dashed #CCC; letter-spacing: 2px; float: left; height:1.8em; vertical-align:bottom; }
+/* ul#tabs li.current_page_item, ul#tabs li.current-cat { background: #003; color:000; } */
+	/*
+ul#tabs li a, ul#tabs li a:visited {color: #000033; text-decoration: none; padding:0.8em; }
+ul#tabs li a:hover { background:#003; color: #FFF; text-decoration: none; }
+*/
+	/*
+ul#tabs li.current_page_item a, ul#tabs li.current_page_item a:visited, ul#tabs li.current-cat a, ul#tabs li.current-cat a:visited { background-color:#FFF; color: #003; text-decoration: none; font-weight:normal; }
+	
+		ul#tabs li.current_page_item a:hover, ul#tabs li.current-cat a:hover { background-color:#003; color: #FFF; text-decoration: none; }  */
+	
+	ul#tabs li.rss { display:none; }
+
+
+
+/*---:[ #header styles ]:---*/
+
+#header { display:none; }
+
+#header #logo { font-weight: bold; font-size: 3.6em; line-height: 1em; margin-bottom: 0.167em; }
+
+	#header #logo a, #header #logo a:visited { color: #111; text-decoration: none; }
+
+	#header #logo a:hover { color: #2361a1; }
+	
+#header #tagline { font-weight: normal; font-size: 1.4em; line-height: 1em; color: #888; }
+
+
+
+/*---:[ content styles ]:---*/
+
+.author_and_date { margin-bottom: 2.2em; line-height: 2.2em; text-transform: uppercase; letter-spacing: 1px; color: #888; }
+
+	.author_and_date a, .author_and_date a:visited { color: #888; text-decoration: none; border-bottom: 1px solid #eee; }
+	
+	.author_and_date a:hover { color: #111; }
+	
+	.author_and_date em { font-style: italic; text-transform: none; letter-spacing: normal; }
+
+.format_text { font-size: 1.4em; line-height: 1.571em; }
+	
+	.format_text p { margin-bottom: 1.571em; }
+	
+/*	.entry-content p { min-height: 132px; }  */
+	
+	.format_text p.note { padding: 0.571em 0.786em; background: #f5f5f5; border: 1px solid #ddd; }
+	
+	.format_text p.alert { padding: 0.571em 0.786em; background: #ffffa0; border: 1px solid #e5e597; }
+	
+	.format_text .drop_cap { padding: 0.04em 0.12em 0 0; font-size: 3.571em; line-height: 0.76em; color: #888; float: left; }
+	
+	.format_text ul { list-style: square; margin: 0 0 1.571em 1.571em; }
+
+	.format_text ol { margin: 0 0 1.571em 1.571em; }
+		
+			.format_text ul ul, .format_text ul ol, .format_text ol ul, .format_text ol ol { margin: 0 0 0 1.571em; }
+	
+	.format_text dl { margin-bottom: 1.571em; }
+			
+		.format_text dt { font-weight: bold; }
+		
+		.format_text dd { margin-bottom: 1.571em; }
+
+	.format_text blockquote { margin: 0 0 1.574em 0.786em; padding-left: 0.786em; }
+	
+		/*---:[ pullquotes ]:---*/
+
+		.format_text blockquote.right, .format_text blockquote.left { width: 11.944em; font-size: 1.286em; line-height: 1.222em; border: none; }
+
+		.format_text blockquote.right { margin: 0 0 1.222em 1.222em; float: right; }
+
+		.format_text blockquote.left { margin: 0 1.222em 1.222em 0; float: left; }
+
+			.format_text blockquote.right p, .format_text blockquote.left p { margin: 0 !important; }
+			
+		/*---:[ end pullquotes ]:---*/
+
+	/*---:[ image handling classes ]:---*/
+
+	.format_text img { }
+
+		.format_text img.left, .format_text img.alignleft { margin: 0 1.571em 1.571em 0; float: left; clear: left; }
+		
+		.format_text img.right, .format_text img.alignright { margin: 0 0 1.571em 1.571em; float: right; clear: right; }
+		
+		.format_text img.center, .format_text img.aligncenter { display: block; margin: 0 auto 1.571em auto; float: none; clear: both; }
+		
+		.format_text img.block, .format_text img.alignnone { display: block; margin: 0 auto 1.571em 0; clear: both; }
+	
+		.format_text img.frame { padding: 0.714em; background: #eee; border: 0.071em solid #ddd; }
+		
+		.format_text img.stack { clear: none !important; }
+
+	/*---:[ end image handling classes ]:---*/
+			
+	.format_text .ad { margin-left: 1.571em; float: right; clear: right; }
+
+		.format_text .ad_left { margin-right: 1.571em; float: left; clear: left; }
+		
+.post_tags { font-size: 1.2em; line-height: 1.833em; color: #666; }
+
+.to_comments { margin-bottom: 1.833em; font-size: 1.2em; line-height: 1.833em; color: #666; clear: both; }
+
+	.to_comments span { font-size: 1.667em; line-height: 1.1em; color: #111; }
+	
+	.to_comments span.bracket { color: #ccc; }
+	
+	.to_comments a, .to_comments a:visited { color: #666; text-decoration: none; }
+	
+	.to_comments a:hover { color: #111; text-decoration: underline; }
+	
+#archive_info { padding: 1.1em 2.2em 1.1em 1.1em; }
+
+	#archive_info p { /* text-transform: uppercase; letter-spacing: 2px; */ font-size:1.4em; line-height:1.3em;   }
+
+.prev_next { padding: 1.1em; font-size: 1em; line-height: 2.2em; text-transform: uppercase; letter-spacing: 2px; border-top: 2px solid #ddd; clear: both; }
+
+	.prev_next .next { text-align: right; }
+
+	.prev_next .floated { float: left; }
+
+	.prev_next a, .prev_next a:visited { text-decoration: none; }
+	
+	.prev_next a:hover { text-decoration: underline; }
+
+
+
+/*---:[ rotating image styles ]:---*/
+
+#multimedia_box { width: 100%; margin-bottom: 2.2em; }
+
+	#image_box { padding: 0em; background: #eee; border-bottom: 1px solid #ddd; }
+
+		#image_box img { display: block; padding: 0.1em; background: #fff; border: 0.1em solid #bbb; }
+
+		#image_box img.four_by_three { width: 42em; height: 31.5em; }
+
+		#image_box img.three_by_two { width: 42em; height: 28em; }
+
+		#image_box img.sixteen_by_nine { width: 41.6em; height: 23.4em; margin: 0 auto; }
+
+		#image_box img.four_by_five { width: 42em; height: 52.5em; }
+
+		#image_box img.two_by_three { width: 42em; height: 63em; }
+
+	/*---:[ video box styles ]:---*/
+
+	#video_box { padding: 1em; background: #000; }
+
+	/*---:[ custom box styles ]:---*/
+
+	#custom_box { padding: 1.1em; background: #eee; border-bottom: 1px solid #ddd; }
+
+
+
+/*---:[ sidebar styles ]:---*/
+
+.sidebar a, .sidebar a:visited { text-decoration: none; }
+
+.sidebar a:hover { text-decoration: underline; }
+
+ul.sidebar_list { list-style: none; padding: 0 1.1em; }
+
+	li.widget { width: 100%; margin-bottom: 2.538em; font-size: 1.3em; line-height: 1.385em; }
+
+	li.centered { text-align: center; }
+	
+	li.tag_cloud { line-height: 1.538em; }
+
+		li.widget p { margin-bottom: 1.231em; }
+
+		li.widget ul { list-style: none; }
+
+			li.widget ul li { margin-bottom: 0.692em; }
+
+				li.widget li ul { margin: 0.692em 0 0 1.385em; }
+				
+#sidebar_1 { display:none; }
+#sidebar_2 { display:none; }
+
+		/*---:[ google custom search ]:---*/
+
+		li.thesis_google_cse_widget form input[type="text"] { width: 14.692em; padding: 0.308em; border-width: 0.077em; text-align: left; }
+
+		li.thesis_google_cse_widget form input[type="submit"] { margin-top: 0.462em; padding: 0.154em 0.231em; font-weight: bold; color: #111; background: url('images/submit-bg.gif'); border: 3px double #999; border-top-color: #ccc; border-left-color: #ccc; cursor: pointer; }
+
+		li.thesis_google_cse_widget form input[type="submit"]:hover { color: #2361a1; }
+		
+		/*---:[ calendar widget ]:---*/
+
+		#calendar_wrap { width: 15.077em; padding: 0 0.231em 0 0.154em; }
+
+			#calendar_wrap a, #calendar_wrap a:visited { font-weight: bold; padding: 0.077em; text-decoration: none; }
+
+			#calendar_wrap a:hover { padding: 0.077em; background: #ddd; text-decoration: none; }
+
+			table#wp-calendar { width: 15.077em; border-collapse: collapse; }
+
+				table#wp-calendar caption { font-weight: normal; font-size: 0.846em; line-height: 2em; text-transform: uppercase; letter-spacing: 2px; background: #e5e5e5; }
+
+				table#wp-calendar th { width: 2.545em; padding-top: 0.091em; font-size: 0.846em; line-height: 1.818em; background: #f2f2f2; border-bottom: 1px solid #ddd; text-align: center; }
+
+				table#wp-calendar td { width: 2.154em; line-height: 1.692em; color: #888; text-align: center; }
+
+				table#wp-calendar td#next, table#wp-calendar td#prev { width: 7.636em; font-size: 0.846em; line-height: 2em; text-transform: uppercase; letter-spacing: 1px; }
+
+				table#wp-calendar td#next { padding-right: 0.545em; text-align: right; }
+
+				table#wp-calendar td#prev { padding-left: 0.545em; text-align: left; }
+
+
+
+/* .attachment-post-thumbnail { padding:3em 3em 3em 0em; } */  
+
+
+/*---:[ comment styles ]:---*/
+
+#comments { margin-right: 2.2em; }
+
+	.comments_intro { font-size: 1.2em; margin-top: 3.667em; padding: 0 0 0.583em 0.917em; line-height: 1.833em; color: #666; }
+
+		.comments_intro span { font-size: 1.667em; line-height: 1.1em; color: #111; }
+
+		.comments_intro span.bracket { color: #ccc; }
+
+	dl#comment_list { border-top: 1px dotted #bbb; }
+
+		dl#comment_list dt { padding: 1.286em 0.786em 0 0.786em; font-size: 1.4em; line-height: 1.571em; }
+
+			dl#comment_list dt strong { font-size: 1.143em; line-height: 1.375em; }
+
+			dl#comment_list dt strong a, dl#comment_list dt strong a:visited { text-decoration: none; }
+
+			dl#comment_list dt strong a:hover { text-decoration: underline; }
+
+			.comment_num { padding-left: 1.818em; font-weight: bold; font-size: 0.786em; line-height: 2em; float: right; }
+
+				.comment_num a, .comment_num a:visited { color: #aaa; padding: 0.1em 0.3em; text-decoration: none; }
+
+				.comment_num a:hover { color: #fff; background: #aaa; }
+
+			.comment_time { font-size: 0.857em; line-height: 1.833em; padding-left: 0.833em; color: #888; }
+
+		dl#comment_list dd { padding: 1.1em 1.1em 0 1.1em; border-bottom: 1px dotted #bbb; }
+
+			a.comment_link, a.comment_link:visited { color: #111; text-decoration: none; font-variant: small-caps; border-bottom: 1px solid #bbb; }
+
+			a.comment_link:hover { color: #111; border-bottom-color: #111; }
+				
+		/*---:[ alternating and author comment colors ]:---*/
+		/*
+		dl#comment_list dt, dl#comment_list dd { background: #f5f5f5; }
+	
+		dl#comment_list dt.alt, dl#comment_list dd.alt { background: #fff; }
+		*/
+		.author_comment { background: #e7f8fb; }
+		
+	dl#trackback_list { padding-left: 1.1em; border-top: 1px dotted #bbb; }
+	
+		dl#trackback_list dt { font-size: 1.4em; line-height: 1.571em; padding-top: 0.786em; }
+		
+			dl#trackback_list dt a, dl#trackback_list dt a:visited { color: #111; text-decoration: none; }
+			
+			dl#trackback_list dt a:hover { color: #111; text-decoration: underline; }
+		
+		dl#trackback_list dd { font-size: 1.2em; line-height: 1.667em; color: #888; }
+		
+	p.comments_closed { font-size: 1.3em; font-variant: small-caps; line-height: 1.692em; letter-spacing: 1px; margin: 3.385em 0 1.692em 0; padding-left: 0.846em; color: #888; }
+
+	/*---:[ comment form styles ]:---*/
+
+	#respond, p.login_alert { font-size: 1.6em; margin: 2.75em 0 0.438em 0.688em; line-height: 1.375em; letter-spacing: 1px; font-variant: small-caps; color: #555; }
+
+	p.login_alert { margin-bottom: 2.75em; padding: 0.5em 0.688em; background: #f5f5f5; border: 1px solid #ddd; }
+
+	#comment_form { padding: 1.1em 2.2em 3em 1.1em; border-top: 1px dotted #bbb; }
+
+		#comment_form p { font-size: 1.4em; line-height: 1.571em; margin-bottom: 1em; }
+
+			#comment_form label { padding-left: 0.786em; }
+			
+		#comment_form p.comment_box { margin-bottom: 0; line-height: 0.714em; }
+		
+			#comment_form textarea { width: 100%; height: 12.571em; padding: 0.286em; line-height: 1.571em; border-width: 0.071em; }
+				
+		#comment_form p.allowed { width: 100%; font-size: 1.2em; padding: 0.5em 0.333em; line-height: 1.667em; color: #807e70; background: #f9f7e4; border: 0.083em dotted #bbb; border-top: 0; }
+
+		#comment_form .form_submit { font-size: 1.143em; padding: 0.313em 0.25em; }
+		
+		/* Support for the highly-recommended Subscribe to Comments Plugin */
+
+		#comment_form p.subscribe-to-comments { font-size: 1.4em; }
+
+			#comment_form p.subscribe-to-comments label { font-size: 1em; }
+
+
+
+/*---:[ footer styles ]:---*/
+
+#footer p{ font-size: 1.3em; line-height: 3em; font-family:Georgia, serif; letter-spacing: 1px; }
+
+#footer img { width:20px; height:20px; }
+
+#footer a, #footer a:visited { color: #666; text-decoration: none; }
+
+#footer a:hover { color: #000; }
+
+
+
+/*---:[ self-clearing floats from Dan Cederholm ]:---*/
+
+ul#tabs:after, #content_box:after, #sidebars_box:after, .format_text:after, .prev_next:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+a.researchlink { font-size: 0.8em; line-height:2em; /* margin-left:2.7em; */ font-weight:normal; font-variant:normal; }
+
+
+div#googlecart-widget-spacer { float:right; margin-top:30px; z-index:1; }
+.googlecart-add { background:#003; color:#FFF; font-weight:bold; padding:3px; margin-left:15px; }
+div#googlecart-widget-head { position:relative; border:none; background-color:#FFF; background-image: url(http://sawmillhollow.com/wp-content/themes/SMH_1/images/shopbasket.png); background-repeat:no-repeat; height:92px; }
+span#googlecart-title { color:#036; font-family: Georgia, serif; font-style:italic; font-size:1em; font-weight:normal; left:130px; top:75px; position:absolute; }
+.googlecart-arrow { display:none; }
+span#googlecart-summary { font-size:1em; color:#003; font-family:Georgia; position:absolute; left:53px; top:70px; }
+
+div#googlecart-widget-body { border-width:5px; /* background-color:#EFF; */ }
+
+div#googlecart-widget-foot:after { content: "Click the 'Google Checkout' button above to Buy!"; font-weight:bold; color: #036; font-size:12px; }
+
+
+ 
+
+.tooltip{
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 3;
+   display: none;
+   background-color:#EEE;
+   border: 3px solid #CCC;
+   padding: 3px;
+   font-size:0.7em;
+   text-decoration:none;
+   max-width:300px;
+   text-align:left;
+}
+            
+.tooltip ul
+{
+line-height:1.5em;
+list-style-position:inside;
+padding:5px;
+}
+

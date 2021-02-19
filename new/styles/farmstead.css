@@ -1,0 +1,29 @@
+nav
+{
+  background-color:#363;
+}
+
+nav div ul
+{
+  background-color:#363;
+}
+
+h1
+{
+	color:#363;
+}
+
+h2
+{
+	color:#363;
+}
+
+h3
+{
+	text-shadow:0 0 25px #363;
+}
+
+#banner
+{
+   background-image: url('http://creativelivingcommunityofct.org/images/banner03.jpg');
+}
