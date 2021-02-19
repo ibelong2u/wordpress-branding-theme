@@ -1,0 +1,8 @@
+/*
+Description:	IE 6 styles for the Thesis Theme
+Author:			Chris Pearson of pearsonified.com
+*/
+
+#content, .sidebar { overflow: hidden; }
+
+.format_text .drop_cap { padding-right: 0.043em; }

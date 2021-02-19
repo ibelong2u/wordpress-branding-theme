@@ -1,0 +1,18 @@
+/*
+Description:	IE 7 styles for the Thesis Theme
+Author:			Chris Pearson of pearsonified.com
+*/
+
+/*---:[ Wow. IE is on the short bus. ]:---*/
+
+html { font-size: 125%; }
+
+body { font-size: 50%; }
+
+/*-----------------------*/
+
+ul#tabs { width: 100%; }
+
+#sidebar_2 { width: 49.9%; }
+
+#comment_form .form_submit { width: auto; overflow: visible; }
